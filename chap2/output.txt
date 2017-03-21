@@ -1,0 +1,3 @@
+enter an integer: you enter the integer 5
+enter a double value: you enter the double 23.55
+enter a string without space: you enter the string java
