@@ -8,6 +8,7 @@ import java.util.Scanner;
 public class P8_6 {
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
+		System.out.println("please enter a string");
 		String s = in.nextLine();
 		int[] counts = countLetters(s);
 
@@ -15,13 +16,16 @@ public class P8_6 {
 			if (counts[i] != 0) {
 				if (i <= 25) {
 					System.out.println((char)(i + 'A') + " appears " +
-						counts[i] + ((counts[i] > 1)))
+						counts[i] + ((counts[i] > 1) ? " times" : " time"));
+				} else {
+					System.out.println((char)(i - 26 + 'a') + " appears " +
+						counts[i] + ((counts[i] > 1) ? " times" : " time"));			
 				}
 			}
 		}
 	}
 
-	public static int countLetters(String s) {
+	public static int[] countLetters(String s) {
 		int[] counts = new int[52];
 
 		for (int i = 0; i < s.length(); i++) {
@@ -36,3 +40,15 @@ public class P8_6 {
 		return counts;
 	}
 }
+
+/*
+java in 2008 ABC
+A appears 1 time
+B appears 1 time
+C appears 1 time
+a appears 2 times
+i appears 1 time
+j appears 1 time
+n appears 1 time
+v appears 1 time
+*/

@@ -15,7 +15,7 @@ public class P8_5 {
 		for (int i = 0; i < counts.length; i++) {
 			if (counts[i] != 0) {
 				System.out.println((char)(i + '0') + " appears " +
-					counts[i] + ((counts[i] > 1) ? " time" : " times"));
+					counts[i] + ((counts[i] > 1) ? " times" : " time"));
 			}
 		}
 	}
