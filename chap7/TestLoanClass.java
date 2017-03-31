@@ -20,7 +20,7 @@ public class TestLoanClass {
 	Loan loan = new Loan(annualInterestRate, numberofYears, loanAmount);
 
 	double monthlyPayment = (int)(loan.getMonthlyPayment() * 100) / 100.0;
-	double totalPayment = (int)(loan.getMonthlyPayment() * 100) / 100.0;
+	double totalPayment = (int)(loan.getTotalPayment() * 100) / 100.0;
 
 	String output = "the loan was created on" + 
 		loan.getLoanDate().toString() + "\n the monthly payment is " +
