@@ -16,7 +16,7 @@ public class P8_9 {
 	public static String convertDecimalToHex(int value) {
 		StringBuilder strBuf = new StringBuilder();
 		int offset = (int)'A' - 10;
-		System.out.println(offset + "");
+
 		while(true) {
 			int mod = value % 16;
 			if (mod >= 10) {
@@ -34,3 +34,17 @@ public class P8_9 {
 		return strBuf.toString();
 	}
 }
+
+/*
+please enter a decimal value
+123
+123 's hex string is 7B
+
+please enter a decimal value
+298
+298 's hex string is 12A
+
+please enter a decimal value
+9123
+9123 's hex string is 23A3
+*/
